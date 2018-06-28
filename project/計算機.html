@@ -17,7 +17,7 @@
 
     //數字鍵與小數點
 
-    function numBtn(str) {
+    function num(str) {
 
         if (clean == true) {
             document.getElementById("box").value = "";
@@ -92,38 +92,41 @@
 <body>
 
 <table border=0>
+    
     <tr>
         <td align="center" colspan="6"> 
             <input align="right" type="text" value="" id="box"  />
         </td>
     </tr>
+    
     <tr align="center">
-        <td>    <input  type="button" value="1" onClick="numBtn('1')">  </td>
-        <td>    <input  type="button" value="2" onClick="numBtn('2')">  </td>
-        <td>    <input  type="button" value="3" onClick="numBtn('3')">  </td>
+        <td>    <input  type="button" value="1" onClick="num('1')">  </td>
+        <td>    <input  type="button" value="2" onClick="num('2')">  </td>
+        <td>    <input  type="button" value="3" onClick="num('3')">  </td>
         <td>    <input  type="button" value="+" onClick="operBtn('+')"> </td>
     </tr>
 
     <tr align="center">
-        <td>    <input  type="button" value="4" onClick="numBtn('4')">  </td>
-        <td>    <input  type="button" value="5" onClick="numBtn('5')">  </td>
-        <td>    <input  type="button" value="6" onClick="numBtn('6')">  </td>
+        <td>    <input  type="button" value="4" onClick="num('4')">  </td>
+        <td>    <input  type="button" value="5" onClick="num('5')">  </td>
+        <td>    <input  type="button" value="6" onClick="num('6')">  </td>
         <td>    <input  type="button" value="-" onClick="operBtn('-')"> </td>
     </tr>
 
     <tr align="center">
-        <td>    <input  type="button" value="7" onClick="numBtn('7')">  </td>
-        <td>    <input  type="button" value="8" onClick="numBtn('8')">  </td>
-        <td>    <input  type="button" value="9" onClick="numBtn('9')">  </td>
+        <td>    <input  type="button" value="7" onClick="num('7')">  </td>
+        <td>    <input  type="button" value="8" onClick="num('8')">  </td>
+        <td>    <input  type="button" value="9" onClick="num('9')">  </td>
         <td>    <input  type="button" value="*" onClick="operBtn('*')"> </td>
     </tr>
 
     <tr align="center">
-        <td>    <input  type="button" value="0" onClick="numBtn('0')">  </td>
-        <td>    <input  type="button" value="." onClick="numBtn('.')">  </td>
+        <td>    <input  type="button" value="0" onClick="num('0')">  </td>
+        <td>    <input  type="button" value="." onClick="num('.')">  </td>
         <td>    <input  type="button" value="=" onClick="operBtn('=')"> </td>
         <td>    <input  type="button" value="/" onClick="operBtn('/')"> </td>
     </tr>
+    
 </table>
 </body>
     
